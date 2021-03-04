@@ -1,0 +1,198 @@
+.catalog
+  padding-bottom: 75px
+  overflow: hidden
+  &__container
+    width: 2608px
+  &__wrapper
+    width: 1920px
+  &__title
+    margin: 0
+    margin-bottom: 28px
+    font-family: 'Cuprum', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 44px
+    color: #0A0C1E
+  &__slider
+    height: 800px
+  &__slide
+    height: 641px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    border: 1px solid #E0E0E0
+    border-radius: 12px
+    padding: 45px 29px 39px 33px
+    &-img
+      margin-left: 20px
+      margin-bottom: 48px
+      width: 229px
+      height: 229px
+    &-title
+      position: relative
+      margin: 0
+      margin-bottom: 16px
+      max-width: 247px
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 22px
+      line-height: 22px
+      color: $text-color-primary
+      &::after
+        position: absolute
+        left: 0
+        right: 0
+        bottom: -7px
+        content: ''
+        width: 100%
+        height: 1px
+        border-bottom: 1px dashed #444444
+        opacity: .5
+    &-ul
+      margin: 0
+      // margin-bottom: 13px
+      padding: 0
+      list-style: none
+      &-item
+        margin-bottom: 6px
+        font-family: 'Arsenal', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 22px
+        color: $text-color-light
+        &:last-child
+          margin-bottom: 0
+    &-select
+      position: relative
+      width: 224px
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 31.2094px
+      line-height: 26px
+      color: $text-color-primary
+      cursor: pointer
+      &::after
+        position: absolute
+        right: 0
+        top: 20px
+        content: ''
+        width: 8px
+        height: 8px
+        border-bottom: 3px solid #2B2A39
+        border-right: 3px solid #2B2A39
+        transform: rotate(-45deg)
+        transition: .5s
+      &_active
+        &::after
+          position: absolute
+          right: 0
+          top: 20px
+          content: ''
+          width: 8px
+          height: 8px
+          border-bottom: 3px solid #2B2A39
+          border-right: 3px solid #2B2A39
+          transform: rotate(45deg)
+          transition: .5s
+      &-ul
+        position: absolute
+        top: 45px
+        padding-right: 15px
+        padding-left: 15px
+        margin: 0
+        width: 260px
+        height: 0
+        background-color: #fff
+        border: 1px solid transparent
+        border-radius: 12px
+        list-style: none
+        overflow: hidden
+        transition: .5s
+        cursor: pointer
+        z-index: 20
+        &_active
+          height: 216px
+          transition: height .5s
+          border: 1px solid #DFDFDF
+          border-radius: 12px
+      &-input
+        position: relative
+        width: 224px
+        border: none
+        background-color: transparent
+        height: 40px
+        font-family: 'Arsenal', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 31.2094px
+        line-height: 26px
+        color: $text-color-primary
+        cursor: pointer
+        z-index: -1
+      &-option
+        padding-bottom: 4.5px
+        padding-top: 4.5px
+        padding-left: 5px
+        padding-right: 5px
+        &:hover
+          background-color: $button-color-primary
+          border-radius: 12px
+          color: #fff
+        &:first-child
+          margin-top: 21px
+        &:last-child
+          margin-bottom: 20px
+    &-buttons
+      margin-top: 16px
+      width: 269px
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-button
+      max-width: 136px
+      padding: 14px 0
+      padding: 14px 25px
+      &:first-child
+        max-width: 125px
+        padding: 14px 36px
+    &-pagination
+      position: absolute
+      left: 51px !important
+      bottom: 90px !important
+      display: flex
+      align-items: center
+      z-index: -1
+      &-bullet
+        margin-right: 13px
+        width: 8px
+        height: 8px
+        border-radius: 100%
+        background-color: #2C2B43
+        opacity: .2
+        cursor: pointer
+        &_active
+          opacity: 1
+    &-arrow
+      position: absolute
+      bottom: 82px
+      width: 20px
+      height: 24px
+      display: flex
+      align-items: center
+      z-index: -1
+      cursor: pointer
+      &_next
+        left: 18px
+        background: url(../img/arrow-next.svg)
+        background-size: 7px 14px
+        background-repeat: no-repeat
+        background-position: center center
+      &_prev
+        background: url(../img/arrow-prev.svg)
+        background-size: 7px 14px
+        background-repeat: no-repeat
+        background-position: center center
