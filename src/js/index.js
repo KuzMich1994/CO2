@@ -4,6 +4,8 @@ import '../index.html';
 import '../css/style.css';
 import '../sass/style.sass';
 import dropdownSelect from './modules/dropdownSelect';
+import showModalWindow from './modules/showModalWindow';
+import sendForm from './modules/sendForm';
 
 const swiper = new Swiper('.catalog__slider', {
   direction: 'horizontal',
@@ -30,3 +32,5 @@ const swiper = new Swiper('.catalog__slider', {
 swiper.init();
 
 dropdownSelect();
+showModalWindow();
+sendForm();

@@ -9,7 +9,7 @@ const dropdownSelect = () => {
 
       if (target.matches('.catalog__slide-select')) {
         ul.classList.toggle('catalog__slide-select-ul_active');
-        output.setAttribute('form', 'sell-form');
+        // output.setAttribute('form', 'sell-form');
       }
       if (target.matches('.catalog__slide-select-cost')) {
         output.value = target.textContent;

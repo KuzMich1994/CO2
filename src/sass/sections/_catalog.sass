@@ -15,7 +15,7 @@
     line-height: 44px
     color: #0A0C1E
   &__slider
-    height: 800px
+    height: 760px
   &__slide
     height: 641px
     display: flex
@@ -153,9 +153,18 @@
       align-items: center
       justify-content: space-between
     &-button
+      position: relative
       max-width: 136px
       padding: 14px 0
       padding: 14px 25px
+      &::placeholder
+        font-family: 'Cuprum', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #fff
       &:first-child
         max-width: 125px
         padding: 14px 36px
@@ -196,3 +205,10 @@
         background-size: 7px 14px
         background-repeat: no-repeat
         background-position: center center
+  &__hidden
+    position: absolute
+    width: 0
+    height: 0
+    padding: 0
+    margin: 0
+    border: none
