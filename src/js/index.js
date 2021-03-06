@@ -6,6 +6,7 @@ import '../sass/style.sass';
 import dropdownSelect from './modules/dropdownSelect';
 import showModalWindow from './modules/showModalWindow';
 import sendForm from './modules/sendForm';
+import showMobileMenu from './modules/showMobileMenu';
 
 const swiper = new Swiper('.catalog__slider', {
   direction: 'horizontal',
@@ -13,6 +14,19 @@ const swiper = new Swiper('.catalog__slider', {
   slidesPerView: 5,
   spaceBetween: 24,
   width: 1831,
+  breakpoints: {
+    1921: {
+      slidesPerView: 5,
+      // spaceBetween: 70
+    },
+    993: {
+      width: 1831
+    },
+    320: {
+      width: 1150,
+      slidesPerView: 4
+    }
+  },
 
   // If we need pagination
   pagination: {
@@ -34,3 +48,4 @@ swiper.init();
 dropdownSelect();
 showModalWindow();
 sendForm();
+showMobileMenu();

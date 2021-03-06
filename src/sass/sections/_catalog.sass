@@ -1,4 +1,5 @@
 .catalog
+  padding-top: 76px
   padding-bottom: 75px
   overflow: hidden
   &__container
@@ -15,9 +16,9 @@
     line-height: 44px
     color: #0A0C1E
   &__slider
-    height: 760px
+    height: 680px
   &__slide
-    height: 641px
+    height: 636px
     display: flex
     flex-direction: column
     align-items: flex-start
@@ -96,16 +97,17 @@
           height: 8px
           border-bottom: 3px solid #2B2A39
           border-right: 3px solid #2B2A39
-          transform: rotate(45deg)
+          transform: rotate(-135deg)
           transition: .5s
       &-ul
         position: absolute
-        top: 45px
+        bottom: 40px
         padding-right: 15px
         padding-left: 15px
         margin: 0
         width: 260px
         height: 0
+        display: none
         background-color: #fff
         border: 1px solid transparent
         border-radius: 12px
@@ -113,12 +115,13 @@
         overflow: hidden
         transition: .5s
         cursor: pointer
-        z-index: 20
+        z-index: -20
         &_active
-          height: 216px
-          transition: height .5s
+          display: block
+          transition: .5s
           border: 1px solid #DFDFDF
           border-radius: 12px
+          z-index: 20
       &-input
         position: relative
         width: 224px
@@ -171,7 +174,6 @@
     &-pagination
       position: absolute
       left: 51px !important
-      bottom: 90px !important
       display: flex
       align-items: center
       z-index: -1
@@ -187,12 +189,12 @@
           opacity: 1
     &-arrow
       position: absolute
-      bottom: 82px
+      bottom: 3px
       width: 20px
       height: 24px
       display: flex
       align-items: center
-      z-index: -1
+      z-index: 1
       cursor: pointer
       &_next
         left: 18px
