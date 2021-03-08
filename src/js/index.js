@@ -7,6 +7,7 @@ import dropdownSelect from './modules/dropdownSelect';
 import showModalWindow from './modules/showModalWindow';
 import sendForm from './modules/sendForm';
 import showMobileMenu from './modules/showMobileMenu';
+import toggleTabs from './modules/toggleTabs';
 
 const swiper = new Swiper('.catalog__slider', {
   direction: 'horizontal',
@@ -49,3 +50,4 @@ dropdownSelect();
 showModalWindow();
 sendForm();
 showMobileMenu();
+toggleTabs();

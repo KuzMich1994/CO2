@@ -60,3 +60,21 @@
         font-size: 15px
         &:first-child
           // padding: 14px 25px
+  .use
+    &__grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-column-gap: 100px
+      grid-row-gap: 35px
+  .rent
+    &__card
+      max-width: 340px
+      &:nth-child(1)
+        margin-bottom: 30px
+      &:nth-child(2)
+        margin-bottom: 30px
+  .faq
+    &__tab
+      &:last-child
+        padding-bottom: 20px
+      &-wrapper
+        max-width: 578px
