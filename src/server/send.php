@@ -32,6 +32,12 @@ foreach ($_POST as $key => $value) {
     if ($key === 'phone') {
         $keyTranslated = 'Телефон';
     }
+    if ($key === 'email') {
+        $keyTranslated = 'Электронная почта';
+    }
+    if ($key === 'renew-lease') {
+        $keyTranslated = 'Продлить аренду';
+    }
     $body .= "
         <tr style='background-color: #f8f8f8'>
             <td style='padding: 10px; border: 1px solid #e9e9e9'><b>$keyTranslated</b></td>

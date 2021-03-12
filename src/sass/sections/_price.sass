@@ -1,0 +1,100 @@
+.price
+  padding-top: 135px
+  padding-bottom: 120px
+  &__wrapper
+    max-width: 557px
+    margin: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    margin: 0
+    margin-bottom: 6px
+    font-family: 'Cuprum', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 42px
+    line-height: 52px
+    color: #1D1D1B
+  &__description
+    margin: 0
+    margin-bottom: 42px
+    max-width: 399px
+    font-family: 'Cuprum', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 21px
+    color: $text-color-primary
+    text-align: center
+  &__card
+    width: 100%
+    margin-bottom: 20px
+    display: flex
+    flex-direction: column
+    height: 185px
+    &-ul
+      width: 100%
+      padding: 0
+      margin: 0
+    &-row
+      margin-bottom: 19px
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: nowrap
+      &::after
+        position: absolute
+        content: ''
+        left: 0
+        bottom: 22px
+        width: 100%
+        height: 1px
+        border-bottom: 1px dashed #AFB0B8
+    &-left
+      position: relative
+      padding-right: 24px
+      display: flex
+      flex-direction: column
+      background-color: #fff
+      z-index: 2
+    &-right
+      position: relative
+      padding-left: 11px
+      background-color: #fff
+      z-index: 2
+    &-title
+      position: relative
+      display: block
+      // width: 459px
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 24px
+      color: $text-color-secondary
+      background-color: #fff
+      z-index: 2
+    &-subtitle
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 25px
+      color: #979797
+    &-cost
+      width: 87px
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 24px
+      color: $text-color-secondary
+  &__info
+    font-family: 'Cuprum', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 21px
+    color: #828282

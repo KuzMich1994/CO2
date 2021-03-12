@@ -8,6 +8,8 @@ import showModalWindow from './modules/showModalWindow';
 import sendForm from './modules/sendForm';
 import showMobileMenu from './modules/showMobileMenu';
 import toggleTabs from './modules/toggleTabs';
+import scrollPage from './modules/scrollPage';
+import scrollToBlock from './modules/scrollToBlock';
 
 const swiper = new Swiper('.catalog__slider', {
   direction: 'horizontal',
@@ -25,7 +27,8 @@ const swiper = new Swiper('.catalog__slider', {
     },
     320: {
       width: 1150,
-      slidesPerView: 4
+      slidesPerView: 4,
+      spaceBetween: 12
     }
   },
 
@@ -51,3 +54,5 @@ showModalWindow();
 sendForm();
 showMobileMenu();
 toggleTabs();
+scrollPage();
+scrollToBlock();

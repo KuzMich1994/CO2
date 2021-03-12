@@ -2,6 +2,9 @@
   .container
     width: 92%
   .header
+    &_stickly
+      padding-top: 15px
+      padding-bottom: 15px
     &__mobile-menu
       position: fixed
       top: 0
@@ -9,8 +12,9 @@
       left: 30%
       bottom: -50px
       display: flex
-      align-items: center
+      align-items: flex-end
       justify-content: center
+      flex-direction: column
       background-color: #fff
       transform: translateX(550px)
       transition: all .5s
@@ -24,7 +28,7 @@
         top: 0
         left: 0
         right: 0
-        bottom: -100px
+        bottom: -100vh
         background-color: #1B1A25
         opacity: 0.2
         z-index: 998
@@ -55,7 +59,6 @@
       &_mobile
         margin-bottom: 20px
         display: block
-        order: 1
         text-align: left
         font-size: 22px
     &__button
@@ -135,6 +138,8 @@
   .rent
     padding-top: 40px
     padding-bottom: 60px
+    &__title
+      margin-bottom: 20px
     &__card
       max-width: 100%
       margin-bottom: 40px
@@ -146,15 +151,16 @@
         max-width: 100%
   .faq
     padding-top: 60px
+    padding-bottom: 40px
     &__tab
       &-wrapper
         max-width: 80%
       &-title
         font-size: 17px
       &-description
-        font-size: 14px
+        font-size: 16px
       &-item
-        font-size: 14px
+        font-size: 16px
   .modal-sell
     &__form
       &-title
@@ -171,3 +177,48 @@
       &-text
         font-size: 16px
         line-height: 17px
+  .price
+    padding-top: 60px
+    padding-bottom: 40px
+    &__title
+      font-size: 35px
+      line-height: 40px
+    &__description
+      margin-bottom: 22px
+      max-width: 222px
+    &__card
+      height: auto
+      margin-bottom: 10px
+      &-row
+        margin-bottom: 13px
+        &::after
+          bottom: 18px
+      &-title
+        font-size: 16px
+        line-height: 20px
+      &-cost
+        font-size: 16px
+        line-height: 22px
+      &-subtitle
+        font-size: 13px
+        line-height: 21px
+  .callback
+    padding-top: 90px
+    padding-bottom: 60px
+    &__title
+      max-width: 670px
+      font-size: 53px
+      line-height: 49px
+    &__form
+      max-width: 217px
+      flex-direction: column
+      &-input
+        max-width: 100%
+        margin-bottom: 10px
+      &-button
+        width: 100%
+      &-policy
+        margin-top: 10px
+  .footer
+    padding-top: 60px
+    padding-bottom: 10px

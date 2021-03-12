@@ -5,6 +5,7 @@ const showModalWindow = () => {
   const modalRentOverlay = document.querySelector('.modal-rent__overlay');
   const slideOutput = document.querySelectorAll('.catalog__slide-select-input');
   const hiddenInput = document.querySelectorAll('.catalog__hidden');
+  const hiddenInput2 = document.querySelector('.faq__tab-input-hidden');
   document.addEventListener('click', e => {
     const target = e.target;
     if (target.matches('.catalog__slide-button_sell')) {
@@ -14,11 +15,17 @@ const showModalWindow = () => {
       target.parentElement.children[0].children[0].setAttribute('form', 'sell-form');
       document.body.classList.add('scroll-hidden');
     }
-    if (target.matches('.catalog__slide-button_rent') || target.matches('.faq__tab-link')) {
+    if (target.matches('.catalog__slide-button_rent')) {
       modalRentDialog.classList.add('modal-rent__dialog_visible');
       modalRentOverlay.classList.add('modal-rent__overlay_visible');
       target.parentElement.parentElement.children[3].children[0].setAttribute('form', 'rent-form');
       target.parentElement.children[1].children[0].setAttribute('form', 'rent-form');
+      document.body.classList.add('scroll-hidden');
+    }
+    if (target.matches('.faq__tab-link')) {
+      modalRentDialog.classList.add('modal-rent__dialog_visible');
+      modalRentOverlay.classList.add('modal-rent__overlay_visible');
+      target.children[0].setAttribute('form', 'rent-form');
       document.body.classList.add('scroll-hidden');
     }
     if (target.matches('.modal-sell__overlay') || target.matches('.modal-sell__close') ||
@@ -34,7 +41,7 @@ const showModalWindow = () => {
       hiddenInput.forEach(item => {
         item.removeAttribute('form');
       });
-      console.log(target);
+      hiddenInput2.removeAttribute('form');
     }
   });
 };

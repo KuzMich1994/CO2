@@ -1,14 +1,17 @@
-const sendForm = (sellForm, rentForm) => {
+const sendForm = (sellForm, rentForm, callbackForm) => {
   sellForm = document.getElementById('sell-form');
   rentForm = document.getElementById('rent-form');
+  callbackForm = document.getElementById('callback-form');
   const errorMessage = 'Что-то пошло не так';
   const loadingMessage = 'Загрузка...';
   const successMessage = 'Спасибо, мы скоро с вами свяжемся';
   const statusMessage = document.createElement('span');
   const spiner = document.querySelector('.loader');
   const spiner2 = document.querySelector('.loader-rent');
+  const spiner3 = document.querySelector('.loader-callback');
   const messageBlock = document.querySelector('.status');
   const messageBlock2 = document.querySelector('.status-rent');
+  const messageBlock3 = document.querySelector('.callback__form-status');
   const sellFormInputs = document.querySelectorAll('.modal-sell__form-input');
   const rentFormInputs = document.querySelectorAll('.modal-rent__form-input');
   const sellButtons = document.querySelectorAll('.catalog__slide-button_sell');
@@ -41,6 +44,11 @@ const sendForm = (sellForm, rentForm) => {
       showLoadMessage();
       spiner2.style.display = 'block';
     }
+    if (target.matches('#callback-form')) {
+      messageBlock3.append(statusMessage);
+      showLoadMessage();
+      spiner3.style.display = 'block';
+    }
 
     postData(new FormData(target))
       .then(response => {
@@ -53,11 +61,13 @@ const sendForm = (sellForm, rentForm) => {
         statusMessage.textContent = successMessage;
         spiner.style.display = 'none';
         spiner2.style.display = 'none';
+        spiner3.style.display = 'none';
       })
       .catch(error => {
         statusMessage.textContent = errorMessage;
         spiner.style.display = 'none';
         spiner2.style.display = 'none';
+        spiner3.style.display = 'none';
         console.error(error);
       })
       .then(() => {

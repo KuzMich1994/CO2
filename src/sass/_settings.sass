@@ -131,7 +131,17 @@ img
       line-height: 128.91%
       color: #8F9DA7
       text-align: center
-  
+    &-link
+      position: relative
+      &::after
+        position: absolute
+        bottom: 2px
+        left: 0
+        right: 0
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #8F9DA7
 .modal-rent
   &__overlay
     position: fixed
@@ -208,6 +218,24 @@ img
         font-size: 17px
         line-height: 26px
         color: #A4A4A4
+    &-message
+      height: 95px
+      margin-bottom: 5px
+      padding-left: 20px
+      padding-right: 10px
+      padding-top: 14px
+      width: 186px
+      border: 1px solid #2B2A39
+      border-radius: 6px
+      resize: none
+      outline: none
+      &::placeholder
+        font-family: 'Cuprum', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 17px
+        line-height: 26px
+        color: #A4A4A4
     &-button
       padding: 15px 58px 13px 60px
       font-family: 'Cuprum', sans-serif
@@ -226,8 +254,20 @@ img
       line-height: 128.91%
       color: #8F9DA7
       text-align: center
+    &-link
+      position: relative
+      &::after
+        position: absolute
+        bottom: 2px
+        left: 0
+        right: 0
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #8F9DA7
 .loader
   display: none
+  margin-top: 10px
   width: 40px
   height: 40px
   background-color: transparent
@@ -236,7 +276,19 @@ img
   border-radius: 100%
   animation: spiner 1s infinite ease-in-out
   &-rent
+    // margin-left: 10px
     display: none
+    margin-top: 10px
+    width: 40px
+    height: 40px
+    background-color: transparent
+    border: 3px solid rgba(44, 43, 67, 0.16)
+    border-top: 3px solid $button-color-primary
+    border-radius: 100%
+    animation: spiner 1s infinite ease-in-out
+  &-callback
+    display: none
+    margin-top: 10px
     width: 40px
     height: 40px
     background-color: transparent
@@ -250,3 +302,5 @@ img
 .scroll-hidden
   overflow: hidden
   padding-right: 18px
+.d-none
+  display: none !important

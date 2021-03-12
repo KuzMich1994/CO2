@@ -15,13 +15,13 @@
         <nav class="header__nav">
           <ul class="header__ul">
             <li class="header__item">
-              <a href="#" class="header__link">Каталог</a>
+              <a href="#" class="header__link catalog-link">Каталог</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">FAQ</a>
+              <a href="#" class="header__link faq-link">FAQ</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Доставка</a>
+              <a href="#" class="header__link cost-link">Доставка</a>
             </li>
           </ul>
         </nav>
@@ -35,6 +35,7 @@
         <div class="header__mobile-menu-overlay"></div>
         <div class="header__mobile-menu">
           <nav class="header__nav header__nav_mobile">
+            <a href="tel:84951591739" class="header__phone header__phone_mobile">8 (495) 159-17-39</a>
           <ul class="header__ul header__ul_mobile">
             <li class="header__item">
               <a href="#" class="header__link">Каталог</a>
@@ -46,7 +47,7 @@
               <a href="#" class="header__link">Доставка</a>
             </li>
           </ul>
-          <a href="tel:84951591739" class="header__phone header__phone_mobile">8 (495) 159-17-39</a>
+          </nav>
         </div>
       </div>
     </div>
@@ -65,7 +66,7 @@
     </div>
   </main>
 
-  <section class="catalog">
+  <section class="catalog" id="catalog">
     <div class="container catalog__container">
       <h2 class="catalog__title">Выберите концентратор</h2>
       <div class="catalog__wrapper">
@@ -75,7 +76,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
+              <img src="./img/catalog-img-1.png" alt="Модель: Philips Respironics EverFlo" class="catalog__slide-img">
               <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
               <ul class="catalog__slide-ul">
                 <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
@@ -116,14 +117,14 @@
               </div>
             </div>
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
-              <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
+              <img src="./img/catalog-img-1.png" alt="Модель: Bitmos oxy 6000-6 L" class="catalog__slide-img">
+              <h3 class="catalog__slide-title">Bitmos oxy 6000-6 L</h3>
               <ul class="catalog__slide-ul">
-                <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
-                <li class="catalog__slide-ul-item">Производитель – США</li>
-                <li class="catalog__slide-ul-item">Производительность кислорода - до 5 л/мин</li>
-                <li class="catalog__slide-ul-item">Уровень шума – 43 Дб</li>
-                <li class="catalog__slide-ul-item">Габариты – 58 х 24 х 38 см</li>
+                <li class="catalog__slide-ul-item">Максимальная концентрация – 95%</li>
+                <li class="catalog__slide-ul-item">Производитель – Германия</li>
+                <li class="catalog__slide-ul-item">Производительность кислорода – до 5-6л/мин</li>
+                <li class="catalog__slide-ul-item">Уровень шума – 35 Дб</li>
+                <li class="catalog__slide-ul-item">Габариты – 54 х 20 х 52 см</li>
               </ul>
               <div class="catalog__slide-select">
                 <input type="text" class="catalog__slide-select-input" name="cost" value="4 000 ₽/нед." readonly>
@@ -148,25 +149,25 @@
               <div class="catalog__slide-buttons">
                 <button class="button button_secondary catalog__slide-button catalog__slide-button_sell">
                   Купить
-                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Apple Respironics EverFlo">
+                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Bitmos oxy 6000-6 L">
                 </button>
                 <button class="button catalog__slide-button catalog__slide-button_rent">
                   Арендовать
-                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Bitmos oxy 6000-6 L">
                 </button>
               </div>
             </div>
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
-              <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
+              <img src="./img/catalog-img-1.png" alt="Модель: Atmung LFY-I-3A-11" class="catalog__slide-img">
+              <h3 class="catalog__slide-title catalog__slide-title_light">Atmung LFY-I-3A-11</h3>
               <ul class="catalog__slide-ul">
-                <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
-                <li class="catalog__slide-ul-item">Производитель – США</li>
-                <li class="catalog__slide-ul-item">Производительность кислорода - до 5 л/мин</li>
-                <li class="catalog__slide-ul-item">Уровень шума – 43 Дб</li>
-                <li class="catalog__slide-ul-item">Габариты – 58 х 24 х 38 см</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Максимальная концентрация - 93%</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производитель – Китай</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производительность кислорода - до 3 л/мин</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Уровень шума – 35 Дб</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Габариты – 37,5 х 21,5 х 35 см</li>
               </ul>
-              <div class="catalog__slide-select">
+              <div class="catalog__slide-select d-none">
                 <input type="text" class="catalog__slide-select-input" name="cost" value="4 000 ₽/нед." readonly>
                 <ul class="catalog__slide-select-ul">
                   <li class="catalog__slide-select-option">
@@ -186,28 +187,30 @@
                   </li>
                 </ul>
               </div>
-              <div class="catalog__slide-buttons">
+              <span class="catalog__slide-rent">В аренде</span>
+              <div class="catalog__slide-buttons d-none">
                 <button class="button button_secondary catalog__slide-button catalog__slide-button_sell">
                   Купить
-                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Atmung LFY-I-3A-11">
                 </button>
                 <button class="button catalog__slide-button catalog__slide-button_rent">
                   Арендовать
-                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Atmung LFY-I-3A-11">
                 </button>
               </div>
+              <button class="catalog__slide-secondary-button">Уведомить о поступлении</button>
             </div>
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
-              <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
+              <img src="./img/catalog-img-1.png" alt="Модель: Invacare PerfectO2" class="catalog__slide-img">
+              <h3 class="catalog__slide-title catalog__slide-title_light">Invacare PerfectO2</h3>
               <ul class="catalog__slide-ul">
-                <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
-                <li class="catalog__slide-ul-item">Производитель – США</li>
-                <li class="catalog__slide-ul-item">Производительность кислорода - до 5 л/мин</li>
-                <li class="catalog__slide-ul-item">Уровень шума – 43 Дб</li>
-                <li class="catalog__slide-ul-item">Габариты – 58 х 24 х 38 см</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Максимальная концентрация -  95,6%</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производитель – Германия</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производительность кислорода - до 5 л/мин</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Уровень шума – 37 Дб</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Габариты – 58,4х30,5х38,1см</li>
               </ul>
-              <div class="catalog__slide-select">
+              <div class="catalog__slide-select d-none">
                 <input type="text" class="catalog__slide-select-input" name="cost" value="4 000 ₽/нед." readonly>
                 <ul class="catalog__slide-select-ul">
                   <li class="catalog__slide-select-option">
@@ -227,28 +230,30 @@
                   </li>
                 </ul>
               </div>
-              <div class="catalog__slide-buttons">
+              <span class="catalog__slide-rent">В аренде</span>
+              <div class="catalog__slide-buttons d-none">
                 <button class="button button_secondary catalog__slide-button catalog__slide-button_sell">
                   Купить
-                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Invacare PerfectO2">
                 </button>
                 <button class="button catalog__slide-button catalog__slide-button_rent">
                   Арендовать
-                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Invacare PerfectO2">
                 </button>
               </div>
+              <button class="catalog__slide-secondary-button">Уведомить о поступлении</button>
             </div>
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
-              <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
+              <img src="./img/catalog-img-1.png" alt="Модель: Armed 8F-5" class="catalog__slide-img">
+              <h3 class="catalog__slide-title catalog__slide-title_light">Armed 8F-5</h3>
               <ul class="catalog__slide-ul">
-                <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
-                <li class="catalog__slide-ul-item">Производитель – США</li>
-                <li class="catalog__slide-ul-item">Производительность кислорода - до 5 л/мин</li>
-                <li class="catalog__slide-ul-item">Уровень шума – 43 Дб</li>
-                <li class="catalog__slide-ul-item">Габариты – 58 х 24 х 38 см</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Максимальная концентрация - 95,5%</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производитель – Китай</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производительность кислорода - до 5 л/мин</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Уровень шума – 55 Дб</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Габариты – 57х38х30см</li>
               </ul>
-              <div class="catalog__slide-select">
+              <div class="catalog__slide-select d-none">
                 <input type="text" class="catalog__slide-select-input" name="cost" value="4 000 ₽/нед." readonly>
                 <ul class="catalog__slide-select-ul">
                   <li class="catalog__slide-select-option">
@@ -268,28 +273,30 @@
                   </li>
                 </ul>
               </div>
-              <div class="catalog__slide-buttons">
+              <span class="catalog__slide-rent">В аренде</span>
+              <div class="catalog__slide-buttons d-none">
                 <button class="button button_secondary catalog__slide-button catalog__slide-button_sell">
                   Купить
-                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Armed 8F-5">
                 </button>
                 <button class="button catalog__slide-button catalog__slide-button_rent">
                   Арендовать
-                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Armed 8F-5">
                 </button>
               </div>
+              <button class="catalog__slide-secondary-button">Уведомить о поступлении</button>
             </div>
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
-              <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
+              <img src="./img/catalog-img-1.png" alt="Модель: Armed 7F-5L с выходом для ингаляции" class="catalog__slide-img catalog__slide-img_margin-bottom">
+              <h3 class="catalog__slide-title catalog__slide-title_light catalog__slide-title_width">Armed 7F-5L с выходом для ингаляции</h3>
               <ul class="catalog__slide-ul">
-                <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
-                <li class="catalog__slide-ul-item">Производитель – США</li>
-                <li class="catalog__slide-ul-item">Производительность кислорода - до 5 л/мин</li>
-                <li class="catalog__slide-ul-item">Уровень шума – 43 Дб</li>
-                <li class="catalog__slide-ul-item">Габариты – 58 х 24 х 38 см</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Максимальная концентрация – 93%</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производитель – США</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производительность кислорода - до 5 л/мин</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Уровень шума – 43 Дб</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Габариты – 58 х 24 х 38 см</li>
               </ul>
-              <div class="catalog__slide-select">
+              <div class="catalog__slide-select d-none">
                 <input type="text" class="catalog__slide-select-input" name="cost" value="4 000 ₽/нед." readonly>
                 <ul class="catalog__slide-select-ul">
                   <li class="catalog__slide-select-option">
@@ -309,28 +316,30 @@
                   </li>
                 </ul>
               </div>
-              <div class="catalog__slide-buttons">
+              <span class="catalog__slide-rent">В аренде</span>
+              <div class="catalog__slide-buttons d-none">
                 <button class="button button_secondary catalog__slide-button catalog__slide-button_sell">
                   Купить
-                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Armed 7F-5L с выходом для ингаляции">
                 </button>
                 <button class="button catalog__slide-button catalog__slide-button_rent">
                   Арендовать
-                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Armed 7F-5L с выходом для ингаляции">
                 </button>
               </div>
+              <button class="catalog__slide-secondary-button">Уведомить о поступлении</button>
             </div>
             <div class="swiper-slide catalog__slide">
-              <img src="./img/catalog-img-1.png" alt="Модель:" class="catalog__slide-img">
-              <h3 class="catalog__slide-title">Philips Respironics EverFlo</h3>
+              <img src="./img/catalog-img-1.png" alt="Модель: Armed 8F-5" class="catalog__slide-img">
+              <h3 class="catalog__slide-title catalog__slide-title_light">Armed 8F-5</h3>
               <ul class="catalog__slide-ul">
-                <li class="catalog__slide-ul-item">Максимальная концентрация – 93%</li>
-                <li class="catalog__slide-ul-item">Производитель – США</li>
-                <li class="catalog__slide-ul-item">Производительность кислорода - до 5 л/мин</li>
-                <li class="catalog__slide-ul-item">Уровень шума – 43 Дб</li>
-                <li class="catalog__slide-ul-item">Габариты – 58 х 24 х 38 см</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Максимальная концентрация - 95,5%</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производитель – Китай</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Производительность кислорода - до 5 л/мин</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Уровень шума – 55 Дб</li>
+                <li class="catalog__slide-ul-item catalog__slide-ul-item_light">Габариты – 57х38х30см</li>
               </ul>
-              <div class="catalog__slide-select">
+              <div class="catalog__slide-select d-none">
                 <input type="text" class="catalog__slide-select-input" name="cost" value="4 000 ₽/нед." readonly>
                 <ul class="catalog__slide-select-ul">
                   <li class="catalog__slide-select-option">
@@ -350,18 +359,20 @@
                   </li>
                 </ul>
               </div>
-              <div class="catalog__slide-buttons">
+              <span class="catalog__slide-rent">В аренде</span>
+              <div class="catalog__slide-buttons d-none">
                 <button class="button button_secondary catalog__slide-button catalog__slide-button_sell">
                   Купить
-                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-sell" class="catalog__hidden" value="Armed 8F-5">
                 </button>
                 <button class="button catalog__slide-button catalog__slide-button_rent">
                   Арендовать
-                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
+                  <input type="hidden" name="product-rent" class="catalog__hidden" value="Armed 8F-5">
                 </button>
                 <!-- <input type="text" form="sell-form" name="buy" class="button button_secondary catalog__slide-button" value="Купить" disabled>
                 <input type="text" form="sell-form" name="rent" class="button catalog__slide-button" value="Арендовать" disabled> -->
               </div>
+              <button class="catalog__slide-secondary-button">Уведомить о поступлении</button>
             </div>
             
           </div>
@@ -481,7 +492,7 @@
           <div class="faq__tab">
             <div class="faq__tab-wrapper">
               <h3 class="faq__tab-title">Что делать после окончания аренды?</h3>
-              <p class="faq__tab-description">Наш курьер приезжает и забирает прибор. Платить за это не нужно. Если вы хотите продлить аренду, необходимо <span class="faq__tab-link">заполнить форму</span> на сайте или позвонить нам по тел.: 8 (495) 159-17-39.</p>
+              <p class="faq__tab-description">Наш курьер приезжает и забирает прибор. Платить за это не нужно. Если вы хотите продлить аренду, необходимо <span class="faq__tab-link"><input class="faq__tab-input-hidden" type="hidden" name="renew-lease" value="Продлить аренду"> заполнить форму</span> на сайте или позвонить нам по тел.: <a href="tel:84951591739" class="faq__tab-phone">8&nbsp;(495) 159-17-39</a>.</p>
             </div>
             <button class="faq__tab-button">
               <img src="./img/close-light.svg" alt="close" class="faq__tab-button-close">
@@ -525,6 +536,73 @@
     </div>
   </section>
 
+  <section class="price">
+    <div class="container">
+      <div class="price__wrapper">
+        <h2 class="price__title">Стоимость доставки</h2>
+        <p class="price__description">Включая первичную доставку и забор оборудования после окончания срока аренды</p>
+        <div class="price__card">
+          <ul class="price__card-ul">
+            <li class="price__card-row">
+              <div class="price__card-left">
+                <span class="price__card-title">Доставка по Москве</span>
+                <span class="price__card-subtitle">В пределах МКАД</span>
+              </div>
+              <div class="price__card-right">
+                <span class="price__card-cost">Бесплатно</span>
+              </div>
+            </li>
+            <li class="price__card-row">
+              <div class="price__card-left">
+                <span class="price__card-title">Доставка по Московской области</span>
+                <span class="price__card-subtitle">До 10 км от МКАД</span>
+              </div>
+              <div class="price__card-right">
+                <span class="price__card-cost">Бесплатно</span>
+              </div>
+            </li>
+            <li class="price__card-row">
+              <div class="price__card-left">
+                <span class="price__card-title">Доставка по Московской области</span>
+                <span class="price__card-subtitle">От 11 км от МКАД</span>
+              </div>
+              <div class="price__card-right">
+                <span class="price__card-cost">30₽/км</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <span class="price__info">*Доставка осуществлятся только по Москве и МО</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback">
+    <div class="container">
+      <div class="callback__wrapper">
+        <h2 class="callback__title">Подберем подходящую модель концентратора</h2>
+        <form id="callback-form" class="callback__form">
+          <input type="text" name="name" class="callback__form-input" placeholder="Ваше имя" required>
+          <input type="text" name="phone" class="callback__form-input" placeholder="Ваш телефон" required>
+          <input type="submit" class="button callback__form-button">
+          <p class="callback__form-policy">Нажимая на кнопку, вы даете согласие на обработку <a href="#" class="callback__form-link">персональных данных</a>.</p>
+          <div class="callback__form-status">
+            <div class="loader-callback callback__form-loader"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="tel:84951591739" class="footer__phone">8 (495) 159-17-39</a>
+        <a href="mailto:info@breexy.ru" class="footer__email">info@breexy.ru</a>
+      </div>
+    </div>
+  </footer>
+
   <div class="modal-sell">
     <div class="modal-sell__overlay"></div>
     <div class="modal-sell__dialog">
@@ -533,9 +611,9 @@
         <h2 class="modal-sell__form-title">Оставьте заявку</h2>
         <p class="modal-sell__form-text">Оставьте свои контактные данные, и мы перезвоним вам</p>
         <input type="text" name="name" class="modal-sell__form-input" placeholder="Ваше имя" required>
-        <input type="text" name="phone" class="modal-sell__form-input" placeholder="Ваш телефон" required>
+        <input type="tel" name="phone" class="modal-sell__form-input" placeholder="Ваш телефон" required>
         <input type="submit" class="button modal-sell__form-button">
-        <p class="modal-sell__form-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных.</p>
+        <p class="modal-sell__form-policy">Нажимая на кнопку, вы даете согласие на обработку <a href="#" class="modal-sell__form-link">персональных данных</a>.</p>
         <div class="status modal-sell__status">
           <div class="loader modal-sell__loader"></div>
         </div>
@@ -550,9 +628,10 @@
         <h2 class="modal-rent__form-title">Оставьте заявку</h2>
         <p class="modal-rent__form-text">Оставьте свои контактные данные, и мы перезвоним вам</p>
         <input type="text" name="name" class="modal-rent__form-input" placeholder="Ваше имя" required>
-        <input type="text" name="phone" class="modal-rent__form-input" placeholder="Ваш телефон" required>
+        <input type="tel" name="phone" class="modal-rent__form-input" placeholder="Ваш телефон" required>
+        <textarea type="text" name="message" class="modal-rent__form-message" placeholder="Комментарий"></textarea>
         <input type="submit" class="button modal-rent__form-button">
-        <p class="modal-rent__form-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных.</p>
+        <p class="modal-rent__form-policy">Нажимая на кнопку, вы даете согласие на обработку <a href="#" class="modal-rent__form-link">персональных данных</a>.</p>
         <div class="status-rent modal-rent__status">
           <div class="loader-rent modal-rent__loader"></div>
         </div>
