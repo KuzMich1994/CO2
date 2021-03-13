@@ -27,8 +27,14 @@ img
   color: #fff
   text-align: center
   cursor: pointer
+  &:hover
+    background-color: #5070E2
+    transition: .3s
   &_secondary
     background-color: $button-color-secondary
+    &:hover
+      background-color: #121117
+      transition: .3s
 .modal-sell
   &__overlay
     position: fixed
@@ -36,7 +42,7 @@ img
     left: 0
     right: 0
     bottom: 0
-    background: rgba(66, 83, 84, 0.5)
+    background: rgba(78, 80, 93, 0.5)
     z-index: 998
     visibility: hidden
     &_visible
@@ -67,6 +73,10 @@ img
     height: 25px
     cursor: pointer
   &__status
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
     &-text
       margin-top: 10px
       font-family: 'Arsenal', sans-serif
@@ -142,14 +152,14 @@ img
         width: 100%
         height: 1px
         background-color: #8F9DA7
-.modal-rent
+.modal-rent, .modal-notify
   &__overlay
     position: fixed
     top: 0
     left: 0
     right: 0
     bottom: 0
-    background: rgba(66, 83, 84, 0.5)
+    background: rgba(78, 80, 93, 0.5)
     z-index: 998
     visibility: hidden
     &_visible
@@ -287,6 +297,16 @@ img
     border-radius: 100%
     animation: spiner 1s infinite ease-in-out
   &-callback
+    display: none
+    margin-top: 10px
+    width: 40px
+    height: 40px
+    background-color: transparent
+    border: 3px solid rgba(44, 43, 67, 0.16)
+    border-top: 3px solid $button-color-primary
+    border-radius: 100%
+    animation: spiner 1s infinite ease-in-out
+  &-notify
     display: none
     margin-top: 10px
     width: 40px

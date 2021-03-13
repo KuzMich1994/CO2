@@ -35,8 +35,15 @@ foreach ($_POST as $key => $value) {
     if ($key === 'email') {
         $keyTranslated = 'Электронная почта';
     }
+    if ($key === 'message') {
+        $keyTranslated = 'Сообщение';
+    }
     if ($key === 'renew-lease') {
         $keyTranslated = 'Продлить аренду';
+    }
+    if ($key === 'notify-name') {
+        $keyTranslated = 'Имя';
+        $customTitle = 'Уведомить о поступлении';
     }
     $body .= "
         <tr style='background-color: #f8f8f8'>

@@ -3,6 +3,8 @@ const showModalWindow = () => {
   const modalSellOverlay = document.querySelector('.modal-sell__overlay');
   const modalRentDialog = document.querySelector('.modal-rent__dialog');
   const modalRentOverlay = document.querySelector('.modal-rent__overlay');
+  const modalNotifyDialog = document.querySelector('.modal-notify__dialog');
+  const modalNotifyOverlay = document.querySelector('.modal-notify__overlay');
   const slideOutput = document.querySelectorAll('.catalog__slide-select-input');
   const hiddenInput = document.querySelectorAll('.catalog__hidden');
   const hiddenInput2 = document.querySelector('.faq__tab-input-hidden');
@@ -22,6 +24,11 @@ const showModalWindow = () => {
       target.parentElement.children[1].children[0].setAttribute('form', 'rent-form');
       document.body.classList.add('scroll-hidden');
     }
+    if (target.matches('.catalog__slide-secondary-button')) {
+      modalNotifyDialog.classList.add('modal-notify__dialog_visible');
+      modalNotifyOverlay.classList.add('modal-notify__overlay_visible');
+      document.body.classList.add('scroll-hidden');
+    }
     if (target.matches('.faq__tab-link')) {
       modalRentDialog.classList.add('modal-rent__dialog_visible');
       modalRentOverlay.classList.add('modal-rent__overlay_visible');
@@ -29,11 +36,14 @@ const showModalWindow = () => {
       document.body.classList.add('scroll-hidden');
     }
     if (target.matches('.modal-sell__overlay') || target.matches('.modal-sell__close') ||
-        target.matches('.modal-rent__overlay') || target.matches('.modal-rent__close')) {
+        target.matches('.modal-rent__overlay') || target.matches('.modal-rent__close') ||
+        target.matches('.modal-notify__overlay') || target.matches('.modal-notify__close')) {
       modalSellDialog.classList.remove('modal-sell__dialog_visible');
       modalSellOverlay.classList.remove('modal-sell__overlay_visible');
       modalRentDialog.classList.remove('modal-rent__dialog_visible');
       modalRentOverlay.classList.remove('modal-rent__overlay_visible');
+      modalNotifyDialog.classList.remove('modal-notify__dialog_visible');
+      modalNotifyOverlay.classList.remove('modal-notify__overlay_visible');
       document.body.classList.remove('scroll-hidden');
       slideOutput.forEach(item => {
         item.removeAttribute('form');

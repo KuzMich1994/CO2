@@ -9,11 +9,15 @@ const sendForm = (sellForm, rentForm, callbackForm) => {
   const spiner = document.querySelector('.loader');
   const spiner2 = document.querySelector('.loader-rent');
   const spiner3 = document.querySelector('.loader-callback');
+  const spiner4 = document.querySelector('.loader-notify');
   const messageBlock = document.querySelector('.status');
   const messageBlock2 = document.querySelector('.status-rent');
   const messageBlock3 = document.querySelector('.callback__form-status');
+  const messageBlock4 = document.querySelector('.modal-notify__status');
   const sellFormInputs = document.querySelectorAll('.modal-sell__form-input');
   const rentFormInputs = document.querySelectorAll('.modal-rent__form-input');
+  const rentFormMessage = document.querySelectorAll('.modal-rent__form-message');
+  const notifyFormInputs = document.querySelectorAll('.modal-notify__form-input');
   const sellButtons = document.querySelectorAll('.catalog__slide-button_sell');
   statusMessage.classList.add('modal-sell__status-text');
   // sellButtons.forEach(item => {
@@ -49,6 +53,11 @@ const sendForm = (sellForm, rentForm, callbackForm) => {
       showLoadMessage();
       spiner3.style.display = 'block';
     }
+    if (target.matches('#notify-form')) {
+      messageBlock4.append(statusMessage);
+      showLoadMessage();
+      spiner4.style.display = 'block';
+    }
 
     postData(new FormData(target))
       .then(response => {
@@ -62,12 +71,14 @@ const sendForm = (sellForm, rentForm, callbackForm) => {
         spiner.style.display = 'none';
         spiner2.style.display = 'none';
         spiner3.style.display = 'none';
+        spiner4.style.display = 'none';
       })
       .catch(error => {
         statusMessage.textContent = errorMessage;
         spiner.style.display = 'none';
         spiner2.style.display = 'none';
         spiner3.style.display = 'none';
+        spiner4.style.display = 'none';
         console.error(error);
       })
       .then(() => {
@@ -75,6 +86,12 @@ const sendForm = (sellForm, rentForm, callbackForm) => {
           item.value = '';
         });
         rentFormInputs.forEach(item => {
+          item.value = '';
+        });
+        notifyFormInputs.forEach(item => {
+          item.value = '';
+        });
+        rentFormMessage.forEach(item => {
           item.value = '';
         });
         setTimeout(() => {
