@@ -275,6 +275,96 @@ img
         width: 100%
         height: 1px
         background-color: #8F9DA7
+.modal-info
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(78, 80, 93, 0.5)
+    z-index: 998
+    visibility: hidden
+    &_visible
+      visibility: visible
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 576px
+    width: 100%
+    height: 95vh
+    transform: translate(-50%, -50%)
+    padding: 51px 55px 30px 44px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    border-radius: 6px
+    z-index: 999
+    overflow-y: scroll
+    visibility: hidden
+    &::-webkit-scrollbar
+      width: 7px
+      height: 8px
+      background-color: #a1a1a1
+    &::-webkit-scrollbar-thumb
+      background-color: rgba(44, 43, 67, 0.16)
+      border-radius: 9em
+      box-shadow: inset 1px 1px 10px #f3faf7
+    &_visible
+      visibility: visible
+  &__close
+    position: absolute
+    top: 43px
+    right: 39px
+    background: url(../img/close.svg)
+    background-repeat: no-repeat
+    background-position: center center
+    width: 25px
+    height: 25px
+    cursor: pointer
+  &__title
+    margin: 0
+    margin-bottom: 11px
+    font-family: Cuprum
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 44px
+    color: #0A0C1E
+  &__paragraph
+    &-title
+      margin: 0
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 17px
+      line-height: 141.5%
+      color: #52525B
+    &-text
+      margin: 0
+      margin-bottom: 25px
+      max-width: 460px
+      width: 100%
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      line-height: 141.5%
+      color: #52525B
+    &-ul
+      padding: 0
+      margin: 0
+      margin-bottom: 25px
+      list-style: none
+      &-item
+        font-family: 'Arsenal', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 17px
+        line-height: 141.5%
+        color: #52525B
 .loader
   display: none
   margin-top: 10px

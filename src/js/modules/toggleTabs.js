@@ -22,21 +22,21 @@ const toggleTabs = () => {
   };
 
   tabsWrapper.addEventListener('click', e => {
-    let target = e.target;
+    // let target = e.target;
     let target2 = e.target;
-    target = target.closest('.faq__tab-button');
+    // target = target.closest('.faq__tab-button');
 
-    if (target) {
-      tabButton.forEach((item, i) => {
-        if (item === target) {
-          toggleTabContent(i);
-        }
-      });
-    }
+    // if (target) {
+    //   tabButton.forEach((item, i) => {
+    //     if (item === target) {
+    //       toggleTabContent(i);
+    //     }
+    //   });
+    // }
 
-    target2 = target2.closest('.faq__tab-title');
+    target2 = target2.closest('.faq__tab');
     if (target2) {
-      tabTitle.forEach((item, i) => {
+      tabs.forEach((item, i) => {
         if (item === target2) {
           toggleTabContent(i);
         }

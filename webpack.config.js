@@ -38,6 +38,10 @@ module.exports = {
           from: 'server',
           to: './'
         },
+        {
+          from: 'other',
+          to: './'
+        },
       ]
     }),
   ],

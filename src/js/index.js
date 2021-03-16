@@ -1,5 +1,6 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+import Inputmask from "inputmask";
 import '../index.html';
 import '../css/style.css';
 import '../sass/style.sass';
@@ -10,6 +11,8 @@ import showMobileMenu from './modules/showMobileMenu';
 import toggleTabs from './modules/toggleTabs';
 import scrollPage from './modules/scrollPage';
 import scrollToBlock from './modules/scrollToBlock';
+import scrollLinks from './modules/scrollLinks';
+import showModalInfo from './modules/showModalInfo';
 
 const swiper = new Swiper('.catalog__slider', {
   direction: 'horizontal',
@@ -49,6 +52,14 @@ const swiper = new Swiper('.catalog__slider', {
 
 swiper.init();
 
+const inputPhone = document.querySelectorAll('[name="phone"]');
+
+const maskPhone = new Inputmask('+7 (999) 999-99-99', {
+  showMaskOnHover: false
+});
+
+maskPhone.mask(inputPhone);
+
 dropdownSelect();
 showModalWindow();
 sendForm();
@@ -56,3 +67,5 @@ showMobileMenu();
 toggleTabs();
 scrollPage();
 scrollToBlock();
+scrollLinks();
+showModalInfo();
