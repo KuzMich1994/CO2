@@ -18,6 +18,7 @@ const sendForm = (sellForm, rentForm, callbackForm) => {
   const rentFormInputs = document.querySelectorAll('.modal-rent__form-input');
   const rentFormMessage = document.querySelectorAll('.modal-rent__form-message');
   const notifyFormInputs = document.querySelectorAll('.modal-notify__form-input');
+  const callbackFormInputs = document.querySelectorAll('.callback__form-input');
   const sellButtons = document.querySelectorAll('.catalog__slide-button_sell');
   statusMessage.classList.add('modal-sell__status-text');
   // sellButtons.forEach(item => {
@@ -91,12 +92,12 @@ const sendForm = (sellForm, rentForm, callbackForm) => {
         notifyFormInputs.forEach(item => {
           item.value = '';
         });
+        callbackFormInputs.forEach(item => {
+          item.value = '';
+        });
         rentFormMessage.forEach(item => {
           item.value = '';
         });
-        setTimeout(() => {
-          statusMessage.remove();
-        }, 3000);
       });
   });
 

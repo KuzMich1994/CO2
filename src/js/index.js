@@ -20,15 +20,19 @@ const swiper = new Swiper('.catalog__slider', {
   slidesPerView: 5,
   spaceBetween: 24,
   width: 1831,
+  speed: 600,
+  shortSwipes: false,
   breakpoints: {
     1921: {
       slidesPerView: 5,
-      // spaceBetween: 70
+      width: 1900,
+      spaceBetween: 20
     },
     993: {
       width: 1831
     },
     320: {
+      shortSwipes: true,
       width: 1150,
       slidesPerView: 4,
       spaceBetween: 12

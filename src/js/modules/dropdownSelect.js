@@ -2,6 +2,8 @@ const dropdownSelect = () => {
   const slide = document.querySelectorAll('.catalog__slide');
 
   slide.forEach(item => {
+    const option = item.querySelectorAll('.catalog__slide-select-cost');
+    option[4].classList.add('disabled');
     item.addEventListener('click', e => {
       const target = e.target;
       const ul = item.querySelector('.catalog__slide-select-ul');
@@ -34,6 +36,20 @@ const dropdownSelect = () => {
           target.parentElement.parentElement.parentElement.classList.remove('catalog__slide-select_active');
           closeSelect(target);
           output.value = target.textContent;
+          const disabledOption = index => {
+            for (let i = 0; i < option.length; i++) {
+              if (index === i) {
+                option[i].classList.add('disabled');
+              } else {
+                option[i].classList.remove('disabled');
+              }
+            }
+          };
+          option.forEach((item, i) => {
+            if (item === target) {
+              disabledOption(i);
+            }
+          });
         }
       }
     });
