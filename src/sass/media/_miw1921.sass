@@ -1,6 +1,9 @@
 @media ( min-width: 1921px )
   .container
     max-width: 1832px
+  .main
+    &__wrapper
+      max-width: 1537px
   .catalog
     &__container
       overflow: hidden
@@ -8,3 +11,17 @@
     &__card
       width: 439px
       max-width: 440px
+      &-img
+        height: 240px
+  .faq
+    &__tab
+      &-button
+        margin-right: 5px
+        display: flex
+        align-items: center
+        justify-content: center
+  .use
+    &__wrapper
+      max-width: 100%
+    &__grid
+      grid-template-columns: repeat(4, 1fr)
