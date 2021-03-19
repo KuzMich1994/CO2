@@ -82,17 +82,6 @@ try {
     // Получатель письма
     $mail->addAddress('drumer19940310@mail.ru');
 
-    // // Настройки вашей почты
-    // $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    // $mail->Username   = 'dorojnye.znaki@yandex.ru'; // Логин на почте
-    // $mail->Password   = ''; // Пароль на почте
-    // $mail->SMTPSecure = 'ssl';
-    // $mail->Port       = 465;
-    // $mail->setFrom('dorojnye.znaki@yandex.ru', 'Кислородные Концентраторы'); // Адрес самой почты и имя отправителя
-
-    // // Получатель письма
-    // $mail->addAddress('krasikova@lmgmedia.ru');
-    // $mail->addAddress('info@breexy.ru');
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {
