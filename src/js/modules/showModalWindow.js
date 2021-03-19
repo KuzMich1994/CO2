@@ -29,6 +29,7 @@ const showModalWindow = () => {
     if (target.matches('.catalog__slide-secondary-button')) {
       modalNotifyDialog.classList.add('modal-notify__dialog_visible');
       modalNotifyOverlay.classList.add('modal-notify__overlay_visible');
+      target.children[0].setAttribute('form', 'notify-form');
       document.body.classList.add('scroll-hidden');
     }
     if (target.matches('.faq__tab-link')) {

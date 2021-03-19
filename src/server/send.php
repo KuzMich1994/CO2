@@ -26,6 +26,9 @@ foreach ($_POST as $key => $value) {
         $keyTranslated = 'Концентратор';
         $customTitle = 'Заявка на аренду';
     }
+    if ($key === 'product-notify') {
+        $keyTranslated = 'Концентратор';
+    }
     if ($key === 'cost') {
         $keyTranslated = 'Стоимость';
     }
@@ -57,7 +60,7 @@ $body = "
         <table style='width: 100%;'>$body</table>";
 
 // Формирование самого письма
-$title = 'Дорожные знаки';
+$title = 'Кислородные концентраторы';
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -71,15 +74,25 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'sergey.student1994@mail.ru'; // Логин на почте
-    $mail->Password   = 'zayebalisuki'; // Пароль на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('sergey.student1994@mail.ru', 'Сергей'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('drumer19940310@mail.ru');
-    $mail->addAddress('Dimakromin@yandex.ru');
-    $mail->addAddress('Dimakromin2@gmail.com');
+
+    // // Настройки вашей почты
+    // $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    // $mail->Username   = 'dorojnye.znaki@yandex.ru'; // Логин на почте
+    // $mail->Password   = ''; // Пароль на почте
+    // $mail->SMTPSecure = 'ssl';
+    // $mail->Port       = 465;
+    // $mail->setFrom('dorojnye.znaki@yandex.ru', 'Кислородные Концентраторы'); // Адрес самой почты и имя отправителя
+
+    // // Получатель письма
+    // $mail->addAddress('krasikova@lmgmedia.ru');
+    // $mail->addAddress('info@breexy.ru');
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {

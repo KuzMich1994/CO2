@@ -128,6 +128,29 @@ img
         font-size: 17px
         line-height: 26px
         color: #A4A4A4
+    &-message
+      height: 95px
+      margin-bottom: 5px
+      padding-left: 20px
+      padding-right: 10px
+      padding-top: 14px
+      width: 186px
+      border: 1px solid #2B2A39
+      border-radius: 6px
+      font-family: 'Cuprum', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      line-height: 26px
+      resize: none
+      outline: none
+      &::placeholder
+        font-family: 'Cuprum', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 17px
+        line-height: 26px
+        color: #A4A4A4
     &-button
       padding: 15px 58px 13px 60px
       font-family: 'Cuprum', sans-serif
@@ -194,10 +217,23 @@ img
     width: 25px
     height: 25px
     cursor: pointer
+  &__status
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &-text
+      margin-top: 10px
+      font-family: 'Arsenal', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 128.91%
   &__form
     display: flex
     flex-direction: column
     align-items: center
+    width: 243px
     &-title
       margin: 0
       margin-bottom: 13px
