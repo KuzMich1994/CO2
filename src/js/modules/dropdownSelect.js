@@ -3,7 +3,7 @@ const dropdownSelect = () => {
 
   slide.forEach(item => {
     const option = item.querySelectorAll('.catalog__slide-select-cost');
-    option[4].classList.add('disabled');
+    option[3].classList.add('disabled');
     item.addEventListener('click', e => {
       const target = e.target;
       const ul = item.querySelector('.catalog__slide-select-ul');
