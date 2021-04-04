@@ -14,6 +14,8 @@
       font-size: 17px
     &__phone
       font-size: 20px
+    &__phones
+      max-width: 292px
   .main
     padding-top: 97px
     padding-bottom: 110px
@@ -26,8 +28,15 @@
         font-size: 50px
     &__subtitle
       font-size: 22px
+    &__buttons-group
+      flex-wrap: wrap
     &__button
       margin-top: 16px
+      margin-bottom: 16px
+      margin-right: 0
+      max-width: 220px
+      width: 100%
+      &_secondary
     &__img
       width: 408px
       height: 396px
@@ -36,9 +45,9 @@
       line-height: 33px
       margin-bottom: 20px
     &__slider
-      height: 547px
+      height: 590px
     &__slide
-      height: 509px
+      height: 547px
       padding: 20px 11px 20px 24px
       &-img
         margin: auto
@@ -79,8 +88,10 @@
           padding: 11px 32px
       &-secondary-button
         padding: 11px 20px
+        &_inside
+          width: 226px
       &-rent
-        margin-bottom: 16px
+        margin-bottom: 65px
   .use
     &__grid
       grid-template-columns: repeat(2, 1fr)

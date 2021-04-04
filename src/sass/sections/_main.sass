@@ -39,6 +39,27 @@
     font-size: 31.5444px
     line-height: 86.5%
     color: $text-color-secondary
-  &__button
+  &__buttons-group
     margin-top: 24px
+    display: flex
+    align-items: center
+  &__button
     padding: 19px 22px
+    margin-right: 8px
+    border: 1px solid transparent
+    &_secondary
+      padding: 19px 22px
+      font-family: 'Cuprum', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      border: 1px solid #CFCFCF
+      border-radius: 6px
+      background-color: transparent
+      color: $text-color-primary
+      transition: .3s
+      &:hover
+        border: 1px solid #878787
+        transition: .3s

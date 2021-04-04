@@ -66,7 +66,16 @@
             </li>
           </ul>
         </nav>
-        <a href="tel:84951591739" class="header__phone">8 (495) 159-17-39</a>
+        <div class="header__phones">
+          <div class="header__phone-block">
+            <a href="tel:84951591739" class="header__phone">8 (495) 159-17-39</a>
+            <span class="header__phone-text">Москва и МО</span>
+          </div>
+          <div class="header__phone-block">
+            <a href="tel:84951591739" class="header__phone">8 (495) 159-17-39</a>
+            <span class="header__phone-text">Сочи, Краснодар</span>
+          </div>
+        </div>
         <div class="header__button-mask"></div>
         <div class="header__button">
           <span class="header__button-line"></span>
@@ -76,7 +85,16 @@
         <div class="header__mobile-menu-overlay"></div>
         <div class="header__mobile-menu">
           <nav class="header__nav header__nav_mobile">
-            <a href="tel:84951591739" class="header__phone header__phone_mobile">8 (495) 159-17-39</a>
+            <div class="header__phones header__phones_mobile">
+              <div class="header__phone-block header__phone-block_mobile">
+                <a href="tel:84951591739" class="header__phone header__phone_mobile">8 (495) 159-17-39</a>
+                <span class="header__phone-text header__phone-text_mobile">Москва и МО</span>
+              </div>
+              <div class="header__phone-block">
+                <a href="tel:84951591739" class="header__phone header__phone_mobile">8 (495) 159-17-39</a>
+                <span class="header__phone-text header__phone-text_mobile">Сочи, Краснодар</span>
+              </div>
+            </div>
           <ul class="header__ul header__ul_mobile">
             <li class="header__item">
               <a href="#catalog" class="header__link">Каталог</a>
@@ -100,7 +118,10 @@
         <div class="main__text">
           <h1 class="main__title">Ки<span class="main__title_letter-spacing">с</span>лородные <span class="main__title main__title_bottom">концентраторы</span></h1>
           <span class="main__subtitle">для домашнего использования</span>
-          <a href="#catalog" id="1button" class="button main__button" onclick="yaCounter74039587.reachGoal('1button'); return true;">Выбрать концентратор</a>
+          <div class="main__buttons-group">
+            <a href="#catalog" id="1button" class="button main__button" onclick="yaCounter74039587.reachGoal('1button'); return true;">Выбрать концентратор</a>
+            <button class="main__button_secondary test-btn">Протестировать бесплатно</button>
+          </div>
         </div>
         <img src="./img/main-img.png" alt="Фотография" class="main__img">
       </div>
@@ -154,6 +175,7 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Philips Respironics EverFlo">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
             </div>
             <div class="swiper-slide catalog__slide">
@@ -194,6 +216,7 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Bitmos oxy 6000-6 L">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
             </div>
             <div class="swiper-slide catalog__slide">
@@ -235,8 +258,9 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Atmung LFY-I-3A-11">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
-              <button class="catalog__slide-secondary-button"
+              <button class="catalog__slide-secondary-button notify-btn"
               onclick="yaCounter74039587.reachGoal('b_notify'); return true;">
               Уведомить о поступлении
               <input type="hidden" name="product-notify" class="catalog__hidden" value="Atmung LFY-I-3A-11">
@@ -281,8 +305,9 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Invacare PerfectO2">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
-              <button class="catalog__slide-secondary-button"
+              <button class="catalog__slide-secondary-button notify-btn"
               onclick="yaCounter74039587.reachGoal('b_notify'); return true;">
               Уведомить о поступлении
               <input type="hidden" name="product-notify" class="catalog__hidden" value="Invacare PerfectO2">
@@ -327,8 +352,9 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Armed 8F-5">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
-              <button class="catalog__slide-secondary-button"
+              <button class="catalog__slide-secondary-button notify-btn"
               onclick="yaCounter74039587.reachGoal('b_notify'); return true;">
               Уведомить о поступлении
               <input type="hidden" name="product-notify" class="catalog__hidden" value="Armed 8F-5">
@@ -373,8 +399,9 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Atmung LFY-I-5F-11">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
-              <button class="catalog__slide-secondary-button"
+              <button class="catalog__slide-secondary-button notify-btn"
               onclick="yaCounter74039587.reachGoal('b_notify'); return true;">
               Уведомить о поступлении
               <input type="hidden" name="product-notify" class="catalog__hidden" value="Atmung LFY-I-5F-11">
@@ -417,8 +444,9 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Atmung LFY-I-3A">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
-              <button class="catalog__slide-secondary-button"
+              <button class="catalog__slide-secondary-button notify-btn"
               onclick="yaCounter74039587.reachGoal('b_notify'); return true;">
                 Уведомить о поступлении
                 <input type="hidden" name="product-notify" class="catalog__hidden" value="Atmung LFY-I-3A">
@@ -463,8 +491,9 @@
                   Арендовать
                   <input type="hidden" name="product-rent" class="catalog__hidden" value="Armed 7F-5L с выходом для ингаляции">
                 </button>
+                <button class="catalog__slide-secondary-button catalog__slide-secondary-button_inside test-btn">Протестировать бесплатно</button>
               </div>
-              <button class="catalog__slide-secondary-button" 
+              <button class="catalog__slide-secondary-button notify-btn" 
               onclick="yaCounter74039587.reachGoal('b_notify'); return true;">
               Уведомить о поступлении
               <input type="hidden" name="product-notify" class="catalog__hidden" value="Armed 7F-5L с выходом для ингаляции">
@@ -697,7 +726,16 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <a href="tel:84951591739" class="footer__phone">8 (495) 159-17-39</a>
+        <div class="footer__phones">
+          <div class="footer__phone-wrapper">
+            <a href="tel:84951591739" class="footer__phone">8 (495) 159-17-39</a>
+            <span class="footer__phone-text">Москва и МО</span>
+          </div>
+          <div class="footer__phone-wrapper">
+            <a href="tel:84951591739" class="footer__phone">8 (495) 159-17-39</a>
+            <span class="footer__phone-text">Сочи, Краснодар</span>
+          </div>
+        </div>
         <a href="mailto:info@breexy.ru" class="footer__email">info@breexy.ru</a>
       </div>
     </div>
@@ -1067,6 +1105,22 @@
         Сигнализация отсутствия напряжения.<br>
         Таймер.
         Удобные колесные опоры.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-test">
+    <div class="modal-test__dialog">
+      <button class="modal-test__close"></button>
+      <div class="modal-test__top">
+        <p class="modal-test__adres">Наше оборудование можно <em>бесплатно протестировать</em> по адресу: г. Москва, ул. Трофимова, 16А </p>
+        <div class="modal-test__phones">
+          <a href="tel:89167726838" class="modal-test__phone">8 (916) 772-68-38</a>
+          <a href="tel:89687940161" class="modal-test__phone">8 (968) 794-01-61</a>
+        </div>
+      </div>
+      <div class="modal-test__bottom">
+        <iframe class="modal-test__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9bafbb48e91d86445efbbdd5afac64d5eae122a70e61415a4f5cfbecadc9d4e6&amp;source=constructor" frameborder="0"></iframe>
+        <img src="./img/modal-test-img.png" alt="Антистресс зона №1" class="modal-test__image">
       </div>
     </div>
   </div>

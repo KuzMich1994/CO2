@@ -418,6 +418,87 @@ img
         font-size: 17px
         line-height: 141.5%
         color: #52525B
+.modal-test
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(78, 80, 93, 0.5)
+  z-index: 998
+  visibility: hidden
+  &_is-open
+    visibility: visible
+  &__dialog
+    max-width: 1081px
+    width: 100%
+    padding: 19px 17px 15px 15px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-height: 485px
+    background-color: #fff
+    border-radius: 6px
+    overflow-y: auto
+  &__top
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__adres, &__adres em
+    margin: 0
+    margin-bottom: 7px
+    max-width: 787px
+    font-family: 'Cuprum', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 22px
+    color: #0A0C1E
+  &__phones
+    margin-bottom: 17px
+    max-width: 290px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__phone
+    font-family: 'Cuprum',sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 22px
+    color: #0A0C1E
+  &__bottom
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__image
+    width: 434px
+    height: 378px
+    border-radius: 6px
+  &__map
+    width: 604px
+    height: 379px
+    border-radius: 6px
+  &__close
+    position: absolute
+    padding: 0
+    top: 20px
+    right: 20px
+    background: url(../img/close.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 16px 16px
+    width: 20px
+    height: 20px
+    border: none
+    cursor: pointer
 .loader
   display: none
   margin-top: 10px

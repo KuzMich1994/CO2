@@ -5,6 +5,7 @@ const showModalWindow = () => {
   const modalRentOverlay = document.querySelector('.modal-rent__overlay');
   const modalNotifyDialog = document.querySelector('.modal-notify__dialog');
   const modalNotifyOverlay = document.querySelector('.modal-notify__overlay');
+  const modalTest = document.querySelector('.modal-test');
   const modalInfoDialog = document.querySelector('.modal-info__dialog');
   const modalInfoOverlay = document.querySelector('.modal-info__overlay');
   const slideOutput = document.querySelectorAll('.catalog__slide-select-input');
@@ -26,7 +27,7 @@ const showModalWindow = () => {
       target.parentElement.children[1].children[0].setAttribute('form', 'rent-form');
       document.body.classList.add('scroll-hidden');
     }
-    if (target.matches('.catalog__slide-secondary-button')) {
+    if (target.matches('.notify-btn')) {
       modalNotifyDialog.classList.add('modal-notify__dialog_visible');
       modalNotifyOverlay.classList.add('modal-notify__overlay_visible');
       target.children[0].setAttribute('form', 'notify-form');
@@ -38,10 +39,15 @@ const showModalWindow = () => {
       target.children[0].setAttribute('form', 'rent-form');
       document.body.classList.add('scroll-hidden');
     }
+    if (target.matches('.test-btn')) {
+      modalTest.classList.add('modal-test_is-open');
+      document.body.classList.add('scroll-hidden');
+    }
     if (target.matches('.modal-sell__overlay') || target.matches('.modal-sell__close') ||
         target.matches('.modal-rent__overlay') || target.matches('.modal-rent__close') ||
         target.matches('.modal-notify__overlay') || target.matches('.modal-notify__close') ||
-        target.matches('.modal-info__overlay') || target.matches('.modal-info__close')) {
+        target.matches('.modal-info__overlay') || target.matches('.modal-info__close') ||
+        target.matches('.modal-test') || target.matches('.modal-test__close')) {
       modalSellDialog.classList.remove('modal-sell__dialog_visible');
       modalSellOverlay.classList.remove('modal-sell__overlay_visible');
       modalRentDialog.classList.remove('modal-rent__dialog_visible');
@@ -50,6 +56,7 @@ const showModalWindow = () => {
       modalNotifyOverlay.classList.remove('modal-notify__overlay_visible');
       // modalInfoDialog.classList.remove('modal-info__dialog_visible');
       // modalInfoOverlay.classList.remove('modal-info__overlay_visible');
+      modalTest.classList.remove('modal-test_is-open');
       document.body.classList.remove('scroll-hidden');
       slideOutput.forEach(item => {
         item.removeAttribute('form');
